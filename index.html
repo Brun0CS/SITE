@@ -1,55 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno</title>
 </head>
+
 <body>
-<header>
-    <h1>Bruno Costa</h1>
-    <nav> <!- seçao de navegação do site.->
-        <ul> <!- listanao ordenada para links do nosso menu.->
-            <li><a href="#sobre">sobre min</a></li>
-             <li><a href="#projeto">projetos</a></li>
-              <li><a href="#contatos">contatos</a></li>
-              <li><a href="https://www.google.com/?hl=pt_BR" target="_blank">google</a></li>
+    <header>
+        <h1>Bruno Costa</h1>
+        <nav> <!- seçao de navegação do site.->
+                <ul> <!- listanao ordenada para links do nosso menu.->
+                        <li><a href="#sobre">sobre min</a></li>
+                        <li><a href="#projeto">projetos</a></li>
+                        <li><a href="#contatos">contatos</a></li>
+                        <li><a href="https://www.google.com/?hl=pt_BR" target="_blank">google</a></li>
 
 
-        </ul> 
-    </nav>
-</header>
-<section id="sobre">
-    <h2>sobre min</h2>
-<IMg SRc="https://i.pinimg.com/736x/4b/fd/4a/4bfd4a70c9125e598ff2374165e7be04.jpg"alt=""title=" imagem de perfil" > 
-<article>
-    <p>
-        Sou Desenvolvedor Web apaixonado por tecnologia e criação de soluções digitais. Trabalho com o desenvolvimento de sites e aplicações web modernas, focando em desempenho, usabilidade e experiência do usuário. Estou sempre buscando aprimorar meus conhecimentos e acompanhar as novas tendências do mercado para entregar projetos de qualidade e que atendam às necessidades dos clientes.
-    </p>
-</article>
-<aside>
-<h3>Habilidades</h3>
-<ul>
-    <li>html</li>
-    <li>css</li>
-    <li>java script</li>
-</ul>
-<section id="projeto">
-    <h2>Projrto</h2>
-    <article><p>Este foi o meu primeiro projeto prático estudando desenvolvimento Front-End.</p></article>
-</section>
-<FOoter>
-    <P>Direitos resarvado Bruno Costa </P>
-<section id="contatos">
-    <h2> Tem um projeto em mente ? Entre em  contato </h2>
-    <Address>
-        E-mail:<a href="Maioto:Brunocosta@.com">Brunocosta@.com</a><br>
-        telefone: <a href="tel:47999176488">47999176488</a>
-    
-    </Address>
-</section>
-</FOoter>
-</aside>
-</section>
+                </ul>
+        </nav>
+    </header>
+    <section id="sobre">
+        <h2>sobre min</h2>
+        <IMg SRc="https://i.pinimg.com/736x/4b/fd/4a/4bfd4a70c9125e598ff2374165e7be04.jpg" alt=""
+            title="Imagem de perfil">
+        <article>
+            <p>
+                Sou Desenvolvedor Web apaixonado por tecnologia e criação de soluções digitais. Trabalho com o
+                desenvolvimento de sites e aplicações web modernas, focando em desempenho, usabilidade e experiência do
+                usuário. Estou sempre buscando aprimorar meus conhecimentos e acompanhar as novas tendências do mercado
+                para entregar projetos de qualidade e que atendam às necessidades dos clientes.
+            </p>
+        </article>
+        <aside>
+            <h3>Habilidades</h3>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>java script</li>
+            </ul>
+            <section id="projeto">
+                <h2>Projrto</h2>
+                <article>
+                    <p>Este foi o meu primeiro projeto prático estudando desenvolvimento Front-End.</p>
+                </article>
+            </section>
+            <section id="Habilidades">
+                <h2>Habilidades e tecnologia</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>tecnoligia</th>
+                        <th>nivel</th>
+                        <th>descreição</th>
+                      </tr>  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Iniciante</td>
+                            <td>Capaz de construir estutura de  pagina web semânticas e responsivas </td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Iniciante</td>
+                            <td>Esperiencia com flexbox e grid e animação CSS</td>
+                        </tr>
+                             <tr>
+                            <td>Java script</td>
+                            <td>basico</td>
+                            <td>Densevolvimento de scripts do lado  do cliente para interações </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <FOoter>
+                <P>Direitos resarvado Bruno Costa </P>
+                <section id="contatos">
+                    <h2> Tem um projeto em mente ? Entre em contato </h2>
+                    <form action="">
+                         <label for="nome">Nome: </label>
+                    <INput type="text" id="Nome" name="Nome" required</input> <BR>
+
+                    <label for="email">Email: </label>
+                    <INput type="email" id="Email" name="E-mail"  required</INput> <BR>
+
+                    <label for="Telefone">Telefone: </label>
+                    <INput type="tel" id="Telefone" name="Telefone" </INput> <BR>
+
+                    <label for="Assunto">Assunto: </label>
+                    <select name="Assunto" id="Assunto" required>
+                        <option value="orçãmento">Orçãmento</option>
+                        <option value="duvida">Duvida</option>
+                        <option value="outros">Outros</option>
+                   </select>
+                   <br>
+
+
+                   <label FOR="Mensagem">Mensagem</label>
+                   <textarea name="Mensagem" id="Mensagem" cols="20" rows="5"> </textarea>
+                   <INput type="checkbox" id="incricao" name="Incricao">
+                    <label for="Incricao"> Deseja receber minha newletter? Fique por dentro.</label>
+
+                    <br>
+                   <input type="submit" value="enviar mensagem ">
+                    </form>
+
+
+                </section>
+            </FOoter>
+        </aside>
+    </section>
 </body>
+
 </html>
